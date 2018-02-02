@@ -32,36 +32,30 @@ public class MainActivity extends AppCompatActivity {
         mButtonEatbus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int hargaeatbus = 50000;
 
-                int harga1 = hargaeatbus * Integer.parseInt(mBanyakPesanan.getText().toString());
-                if (uang <= harga1) {
-                    String a = String.valueOf(harga1);
                     Intent pindah = new Intent(MainActivity.this, secondActivity.class);
-                    pindah.putExtra("menueatbus", mNamaMenu.getText().toString());
-                    pindah.putExtra("menueatbus2", mBanyakPesanan.getText().toString());
-                    pindah.putExtra("hargaeatbus", a);
+                    pindah.putExtra("tempat","Eatbus");
+                    pindah.putExtra("namamenu", mNamaMenu.getText().toString());
+                    pindah.putExtra("jumlahmakanan", mBanyakPesanan.getText().toString());
+                    pindah.putExtra("harga", "50000");
                     startActivity(pindah);
-                }
+
             }
         });
 
         mButtonAbnormal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int hargaabnormal = 30000;
 
-                int harga = hargaabnormal * Integer.parseInt(mBanyakPesanan.getText().toString());
-              if (uang >= harga){
-                  String b = String.valueOf(harga);
-                  Intent pindah = new Intent(getApplicationContext(),ThirdActivity.class);
-                  pindah.putExtra("menuabnormal",mNamaMenu.getText().toString());
-                  pindah.putExtra("menuabnormal2",mBanyakPesanan.getText().toString());
-                  pindah.putExtra("hargaabnormal", b);
+                  Intent pindah = new Intent(MainActivity.this,secondActivity.class);
+                  pindah.putExtra("tempat","Abnormal");
+                  pindah.putExtra("namamenu",mNamaMenu.getText().toString());
+                  pindah.putExtra("jumlahmakanan",mBanyakPesanan.getText().toString());
+                  pindah.putExtra("harga", "30000");
 
                   startActivity(pindah);
 
-              }
+
 
 
             }
