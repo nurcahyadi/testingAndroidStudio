@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/jarak"
+    tools:context="com.example.android.nurcahyadi_1202154156_modul1.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/makanmalem"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:textSize="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/withmilea"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/ketikmenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        />
+    <EditText
+        android:id="@+id/ketikjumlah"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <Button
+            android:id="@+id/buttoneatbus"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Eatbus"
+            android:layout_marginRight="16dp"
+            android:background="@color/colorAccent"
+            />
+        <Button
+            android:id="@+id/buttonabnormal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="abnormal"
+            android:layout_marginLeft="16dp"
+            android:background="@color/colorAccent"
+            />
+    </LinearLayout>
+
+</LinearLayout>
